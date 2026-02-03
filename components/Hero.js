@@ -86,7 +86,7 @@ export default function Hero() {
                 Get In Touch
               </button>
               <a
-                href="https://drive.google.com/file/d/1ggm-EwXEedcovYpUb2YY7vZ2E7xd5yfs/view?usp=sharing"
+                href="https://drive.google.com/file/d/1vsGCFnDLU3lbB40vRpbC_L6nP5LH2aRo/view?usp=drive_link"
                 target="_blank"
                 download
                 className="btn-secondary text-lg px-8 py-4 hover-lift"
