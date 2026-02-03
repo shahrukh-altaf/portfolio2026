@@ -71,32 +71,26 @@ export default function About() {
   const projects = [
     {
       title: "Timeslink Logistics (Next.js)",
-      link: "https://timeslinklogistics.com",
+      link: "https://timeslinklogistics.com/",
       description:
         "Full-stack logistics platform with real-time shipment tracking, Google OAuth, and admin dashboard. Built using Next.js, Prisma, PostgreSQL, and Tailwind CSS, deployed on VPS.",
     },
 
     {
       title: "Vocabup (Next.js)",
-      link: "http://codesbyshahrukh.online/",
+      link: "https://vocabup.codesbyshahrukh.online/",
       description:
         "Vocabulary builder app using Next.js, Redux Toolkit, Prisma, and PostgreSQL. Features interactive cards with multiple-choice answers and animations.",
     },
     {
       title: "Quick Mart E-commerce Store (Next.js)",
-      link: "http://codesbyshahrukh.online/",
+      link: "https://quick-mart.codesbyshahrukh.online/",
       description:
         "Instant order-based e-commerce platform built with Next.js, React Query, Prisma, and PostgreSQL. Users order via form without signup, with full admin control for products and categories.",
     },
     {
-      title: "Logistics Tracking System (Times Link Logistics)",
-      link: "http://codesbyshahrukh.online/",
-      description:
-        "Developed a complete logistics tracking system with real-time updates and admin dashboard.",
-    },
-    {
       title: "Multivendor E-commerce Platform (Hans Logistics FZE)",
-      link: "http://codesbyshahrukh.online/",
+      link: "http://fasbazar.ae/",
       description:
         "Developed a complete multivendor e-commerce system with UI design, product management, and admin controls.",
     },

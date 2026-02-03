@@ -1,6 +1,7 @@
-import vocabup from "../app/assets/projectsImages/vocabup.png";
-import timeslink from "../app/assets/projectsImages/timeslink.png";
-import crud from "../app/assets/projectsImages/crud.png";
+import vocabup from "../public/images/projectsImages/vocabup.png";
+import timeslink from "../public/images/projectsImages/timeslink.png";
+import crud from "../public/images/projectsImages/crud.png";
+import quickmart from "../public/images/projectsImages/quick-mart.png";
 
 export const projects = [
   {
@@ -34,6 +35,19 @@ export const projects = [
     featured: true,
     image: vocabup,
   },
+  {
+    id: 3,
+    title: "QuickMart Ecommerce Store",
+    description:
+      "E-commerce store built with Prisma and PostgreSQL. Supports product variations, filters, and bulk order submission via a simple form, without a cart system.",
+    technologies: ["React", "Next.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
+    category: "nextjs",
+    github: "https://github.com/Tilwa/quick-mart",
+    live: "https://quick-mart.codesbyshahrukh.online/",
+    featured: true,
+    image: quickmart,
+  },
+
   {
     id: 100,
     title: "CRUD Next.js Application",

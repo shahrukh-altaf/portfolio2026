@@ -8,6 +8,8 @@ import {
   FaPalette,
   FaMobile,
 } from "react-icons/fa";
+import { SiJavascript, SiReact, SiNextdotjs } from "react-icons/si";
+
 import Link from "next/link";
 import { projects as allProjects } from "../data/projects";
 import Image from "next/image";
@@ -17,11 +19,11 @@ export default function Projects() {
 
   const filters = [
     { key: "all", label: "All Projects", icon: FaCode },
-    { key: "html", label: "HTML", icon: FaMobile },
+    // { key: "html", label: "HTML", icon: FaMobile },
     // { key: "css", label: "CSS", icon: FaMobile },
-    { key: "javascript", label: "JavaScript", icon: FaMobile },
-    { key: "reactjs", label: "React.js", icon: FaPalette },
-    { key: "nextjs", label: "Next.js", icon: FaPalette },
+    { key: "javascript", label: "JavaScript", icon: SiJavascript },
+    { key: "reactjs", label: "React.js", icon: SiReact },
+    { key: "nextjs", label: "Next.js", icon: SiNextdotjs },
     // { key: "typescript", label: "TypeScript", icon: FaPalette },
   ];
 
