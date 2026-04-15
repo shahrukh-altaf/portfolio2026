@@ -14,98 +14,101 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function About() {
   const [activeTab, setActiveTab] = useState("skills");
+  const [expandedProjects, setExpandedProjects] = useState({});
 
   const skills = [
-    { name: "HTML/CSS", level: 95, icon: FaPalette },
-    { name: "JavaScript", level: 75, icon: FaCode },
-    { name: "React.js", level: 85, icon: FaRocket },
-    { name: "Next.js", level: 80, icon: FaRocket },
-    { name: "Tailwind CSS", level: 40, icon: FaPalette },
-    { name: "Node.js", level: 70, icon: FaDatabase },
-    { name: "TypeScript", level: 40, icon: FaCode },
-    { name: "RESTful APIs", level: 95, icon: FaTools },
-    { name: "Responsive Design", level: 80, icon: FaMobile },
+    { name: "React.js", level: 90, icon: FaRocket },
+    { name: "Next.js", level: 85, icon: FaRocket },
+    { name: "TypeScript", level: 65, icon: FaCode },
+    { name: "Tailwind CSS", level: 85, icon: FaPalette },
+    { name: "Node.js", level: 80, icon: FaDatabase },
+    { name: "Express.js", level: 75, icon: FaDatabase },
+    { name: "REST APIs", level: 90, icon: FaTools },
+    { name: "PostgreSQL", level: 80, icon: FaDatabase },
+    { name: "React Query", level: 85, icon: FaTools },
+    { name: "Redux Toolkit", level: 80, icon: FaTools },
+    { name: "Prisma ORM", level: 80, icon: FaDatabase },
+    { name: "React Native", level: 55, icon: FaMobile },
+    { name: "Java (Android)", level: 50, icon: FaMobile },
   ];
 
   const experiences = [
     {
-      title: "Full Stack Developer",
-      company: "Timeslink Logistics - Dubai (Online)",
-      period: "Aug 2025 - Present",
+      title: "Full-Stack Software Engineer",
+      company: "Timeslink | Dubai, UAE",
+      period: "07/2025 - 01/2026",
       description:
-        "Developed and deployed a full-stack logistics platform with real-time tracking, Google login, and admin dashboard.",
+        "Led end-to-end development of a production-grade web application, from Figma-based design to deployment",
       achievements: [
-        "Built scalable logistics web app using Next.js, Prisma, PostgreSQL, and Tailwind CSS.",
-        "Integrated Google OAuth for secure authentication and access control.",
-        "Created dynamic APIs for shipment tracking and project management.",
-        "Implemented admin dashboard with CMS, blog, and analytics.",
-        "Deployed and optimized app on VPS for high performance.",
+        "Built scalable full-stack system using Next.js, React.js, and Tailwind CSS",
+        "Developed REST APIs with Prisma ORM and PostgreSQL for efficient data handling",
+        "Implemented secure authentication with Google Auth and role-based access",
+        "Designed real-time dashboard using React Query for optimized data flow",
+        "Deployed and maintained application on VPS, handling server configuration and production setup",
+        "Delivered multi-language support (English, Russian) for international users",
       ],
       link: "https://timeslinklogistics.com",
     },
 
     {
       title: "Frontend Developer",
-      company: "Hans Logistics FZE - Dubai (onsite)",
-      period: "Mar 2022 - Apr 2024",
+      company: "Hans Logistics FZE | Dubai, UAE",
+      period: "03/2022 - 04/2024",
       description:
-        "Developed and maintained a multivendor e-commerce platform with responsive, user-friendly interfaces.",
+        "Developed and maintained multi-vendor web applications within a collaborative development team",
       achievements: [
-        "Built the front end of an e-commerce store integrated with backend APIs",
-        "Implemented responsive UI and product management features for vendors and clients",
-        "Created and deployed Figma-based designs across multiple business websites",
+        "Built scalable React.js interfaces using React Query integrated with REST APIs",
+        "Converted Figma designs into responsive UI using Flexbox and Grid layouts",
+        "Implemented complete storefront features including product listings and dashboards",
+        "Collaborated with backend teams for API integration and data consistency",
+        "Contributed to backend development using Node.js and Express.js in later phase",
       ],
       link: "https://fasbazar.com/",
+    },
+    {
+      title: "Junior Java Developer",
+      company: "Pearlcom Softwarehouse | Rawalpindi, Pakistan",
+      period: "09/2018 - 08/2019",
+      description:
+        "Developed Android applications using Java with focus on UI/UX design",
+      achievements: [
+        "Designed mobile interfaces using Adobe Illustrator based on client requirements",
+        "Implemented interactive UI components and screen animations",
+        "Built educational mobile application integrated with Firebase backend",
+        "Collaborated within cross-functional team to deliver client projects",
+      ],
+      link: null,
     },
   ];
 
   const education = [
     {
-      degree: "Bachelor of Computer Science (BSCS)",
-      institution: "Iqra University Islamabad Campus",
-      year: "2017 - 2021",
-      description: "Focused on web development and software engineering.",
+      degree: "Bachelor of Science in Computer Science",
+      institution: "Iqra University | Islamabad, PAK",
+      year: "11/2021",
+      description: "Graduated with focus on software engineering and development.",
     },
   ];
 
   const projects = [
     {
-      title: "Timeslink Logistics (Next.js)",
-      link: "https://timeslinklogistics.com/",
+      title: "Timeslink Logistics (Tracking Platform)",
+      link: "https://timeslinklogistics.com/en",
       description:
-        "Full-stack logistics platform with real-time shipment tracking, Google OAuth, and admin dashboard. Built using Next.js, Prisma, PostgreSQL, and Tailwind CSS, deployed on VPS.",
+        "Built a full-stack logistics tracking platform with a real-time dashboard for monitoring shipments and operations. Built using Next.js, React Query, Prisma ORM, and PostgreSQL, ensuring scalable and efficient data handling. Implemented secure Google Authentication, restricting dashboard access to authorized admin users only. Designed and developed admin dashboard features, including blog management and full CRUD operations. Created responsive landing pages and marketing website, supporting global logistics business operations.",
     },
 
     {
-      title: "Vocabup (Next.js)",
+      title: "VocabUp — Vocabulary Builder",
       link: "https://vocabup.codesbyshahrukh.online/",
       description:
-        "Vocabulary builder app using Next.js, Redux Toolkit, Prisma, and PostgreSQL. Features interactive cards with multiple-choice answers and animations.",
+        "Built a responsive vocabulary learning web application designed for non-native English speakers. Implemented flashcard-based learning system with progress tracking and mistake analysis features. Used Redux Toolkit for state management, enabling efficient handling of vocabulary data and user progress. Designed an engaging game-like learning experience, improving user interaction and retention.",
     },
     {
-      title: "Quick Mart E-commerce Store (Next.js)",
+      title: "QuickMart — Instant Order Store",
       link: "https://quick-mart.codesbyshahrukh.online/",
       description:
-        "Instant order-based e-commerce platform built with Next.js, React Query, Prisma, and PostgreSQL. Users order via form without signup, with full admin control for products and categories.",
-    },
-    {
-      title: "Multivendor E-commerce Platform (Hans Logistics FZE)",
-      link: "http://fasbazar.ae/",
-      description:
-        "Developed a complete multivendor e-commerce system with UI design, product management, and admin controls.",
-    },
-
-    {
-      title: "Hotel Management System (Next.js)",
-      link: "http://codesbyshahrukh.online/",
-      description:
-        "Created a full-stack hotel booking system with authentication, room management, and optimized performance.",
-    },
-    {
-      title: "OMDB Movie Search Engine (React.js)",
-      link: "http://codesbyshahrukh.online/",
-      description:
-        "Developed a real-time movie search app integrating the OMDB API with responsive UI and error handling.",
+        "Built a frictionless e-commerce platform allowing users to place orders without account registration. Built using Next.js and React Query, optimizing server-state management and performance. Designed and implemented admin dashboard with Google Authentication, enabling secure product and order management. Created advanced product management system, supporting variations (size, color, attributes) and bulk operations. Focused on user-centric design, simplifying the ordering process for faster customer conversion.",
     },
   ];
 
@@ -117,9 +120,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Web Developer passionate about building modern, scalable, and
-            user-friendly web applications with clean code and innovative
-            solutions.
+            Full-Stack Software Engineer passionate about building scalable web and mobile applications. Specialized in Next.js, React.js, React Native, Node.js, and PostgreSQL with expertise in developing high-performance user interfaces and RESTful APIs. Dedicated to delivering end-to-end solutions with clean code, innovative architecture, and exceptional user experience.
           </p>
         </div>
 
@@ -131,27 +132,29 @@ export default function About() {
                 Who I Am
               </h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                I'm Shahrukh Altaf, a dedicated Web Developer with strong
-                expertise in React.js, Next.js, and full-stack development. I
-                specialize in creating responsive, scalable, and
-                performance-driven applications.
+                Full-Stack Software Engineer with 3+ years of experience building scalable web and mobile applications across software
+                house and product-based environments. Specialized in Next.js, React.js, React Native, Node.js, and PostgreSQL, with strong
+                expertise in developing high-performance user interfaces and RESTful APIs. Proven ability to deliver end-to-end solutions,
+                from UI/UX design to backend development and production deployment on VPS environments. Experienced with modern
+                tools including React Query, Prisma ORM, and Tailwind CSS for building efficient and maintainable systems. Based in Doha
+                with transferable visa and immediate availability.
               </p>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="text-center p-4 bg-white rounded-lg">
-                  <div className="text-2xl font-bold gradient-text">2+</div>
-                  <div className="text-gray-600">Years Experience</div>
+              <div className="grid grid-cols-2 gap-1 sm:gap-2 md:gap-4">
+                <div className="text-center p-1 sm:p-2 md:p-4 bg-white rounded-lg">
+                  <div className="text-base sm:text-lg md:text-2xl font-bold gradient-text">3+</div>
+                  <div className="text-[10px] sm:text-xs md:text-sm text-gray-600 leading-tight">Years</div>
                 </div>
-                <div className="text-center p-4 bg-white rounded-lg">
-                  <div className="text-2xl font-bold gradient-text">13</div>
-                  <div className="text-gray-600">Projects Completed</div>
+                <div className="text-center p-1 sm:p-2 md:p-4 bg-white rounded-lg">
+                  <div className="text-base sm:text-lg md:text-2xl font-bold gradient-text">15</div>
+                  <div className="text-[10px] sm:text-xs md:text-sm text-gray-600 leading-tight">Projects</div>
                 </div>
-                <div className="text-center p-4 bg-white rounded-lg">
-                  <div className="text-2xl font-bold gradient-text">8+</div>
-                  <div className="text-gray-600">Technologies</div>
+                <div className="text-center p-1 sm:p-2 md:p-4 bg-white rounded-lg">
+                  <div className="text-base sm:text-lg md:text-2xl font-bold gradient-text">10+</div>
+                  <div className="text-[10px] sm:text-xs md:text-sm text-gray-600 leading-tight">Tech</div>
                 </div>{" "}
-                <div className="text-center p-4 bg-white rounded-lg">
-                  <div className="text-2xl font-bold gradient-text">2</div>
-                  <div className="text-gray-600">Freelance Projects</div>
+                <div className="text-center p-1 sm:p-2 md:p-4 bg-white rounded-lg">
+                  <div className="text-base sm:text-lg md:text-2xl font-bold gradient-text">2</div>
+                  <div className="text-[10px] sm:text-xs md:text-sm text-gray-600 leading-tight">Companies</div>
                 </div>
               </div>
             </div>
@@ -225,13 +228,17 @@ export default function About() {
                           {exp.title}
                         </h4>
                         <p className="text-blue-600 font-medium">
-                          <Link
-                            href={exp.link}
-                            target="_blank"
-                            className="hover:text-blue-700 transition-colors "
-                          >
-                            {exp.company}
-                          </Link>
+                          {exp.link ? (
+                            <Link
+                              href={exp.link}
+                              target="_blank"
+                              className="hover:text-blue-700 transition-colors "
+                            >
+                              {exp.company}
+                            </Link>
+                          ) : (
+                            exp.company
+                          )}
                         </p>
                         <p className="text-gray-500 text-sm mb-2">
                           {exp.period}
@@ -295,7 +302,26 @@ export default function About() {
                           {project.title + `🔗`}
                         </a>
 
-                        <p className="text-gray-700">{project.description}</p>
+                        <p className="text-gray-700">
+                          {expandedProjects[index]
+                            ? project.description
+                            : project.description.length > 200
+                            ? project.description.substring(0, 200) + "..."
+                            : project.description}
+                          {project.description.length > 200 && !expandedProjects[index] && (
+                            <button
+                              onClick={() =>
+                                setExpandedProjects((prev) => ({
+                                  ...prev,
+                                  [index]: true,
+                                }))
+                              }
+                              className="text-blue-600 hover:text-blue-800 ml-2 font-medium"
+                            >
+                              Read more
+                            </button>
+                          )}
+                        </p>
                       </div>
                     ))}
                   </div>

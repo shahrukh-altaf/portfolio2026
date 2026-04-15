@@ -14,10 +14,11 @@ export default function Hero() {
   const [currentText, setCurrentText] = useState(0);
 
   const texts = [
-    "Full-Stack Next.js Developer",
-    "React & Tailwind Expert",
-    "Prisma + PostgreSQL Dev",
-    "Modern Web Builder",
+    "Full-Stack Software Engineer",
+    "React.js & Next.js Professional",
+    "Node.js & REST APIs Developer",
+    "Prisma + PostgreSQL Specialist",
+    "Web & Mobile Developer",
   ];
 
   useEffect(() => {
@@ -73,9 +74,7 @@ export default function Hero() {
             </div>
 
             <p className="text-lg opacity-90 mb-8 leading-relaxed">
-              Full-stack developer skilled in Next.js, React, Prisma, and
-              PostgreSQL. I build fast, scalable, and modern web applications
-              with clean UI and robust architecture.
+              Full-Stack Software Engineer specializing in web and mobile development. I build scalable applications using React.js, Next.js, Node.js, React Native with Prisma ORM and PostgreSQL. Creating fast, modern solutions with clean code and robust architecture.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -86,7 +85,7 @@ export default function Hero() {
                 Get In Touch
               </button>
               <a
-                href="https://drive.google.com/file/d/1vsGCFnDLU3lbB40vRpbC_L6nP5LH2aRo/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1sxeNHW6EDWwHY1SP5NFHd9c5EIYgGJrN/view?usp=sharing"
                 target="_blank"
                 download
                 className="btn-secondary text-lg px-8 py-4 hover-lift"
@@ -99,7 +98,7 @@ export default function Hero() {
             {/* Social Links */}
             <div className="flex space-x-6 mt-8">
               <a
-                href="https://github.com/Tilwa"
+                href="https://github.com/shahrukh-altaf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-blue-300 transition-colors p-3 rounded-full border border-white/20 hover:border-white/40"

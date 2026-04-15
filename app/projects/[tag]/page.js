@@ -1,13 +1,17 @@
+"use client";
+
 import Link from "next/link";
 import { projects as allProjects } from "../../../data/projects";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
 import Hero from "../../../components/Hero";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { useState } from "react";
 
 const PAGE_SIZE = 6;
 
 export default function TagProjectsPage({ params, searchParams }) {
+  const [expandedProjects, setExpandedProjects] = useState({});
   const tag = params.tag;
   const page = Number(searchParams?.page || 1);
 
@@ -49,7 +53,26 @@ export default function TagProjectsPage({ params, searchParams }) {
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 mb-4">{project.description}</p>
+                  <p className="text-gray-600 mb-4">
+                    {expandedProjects[project.id]
+                      ? project.description
+                      : project.description.length > 150
+                      ? project.description.substring(0, 150) + "..."
+                      : project.description}
+                    {project.description.length > 150 && (
+                      <button
+                        onClick={() =>
+                          setExpandedProjects((prev) => ({
+                            ...prev,
+                            [project.id]: !prev[project.id],
+                          }))
+                        }
+                        className="text-blue-600 hover:text-blue-800 ml-2 font-medium"
+                      >
+                        {expandedProjects[project.id] ? "See less" : "See more"}
+                      </button>
+                    )}
+                  </p>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((t) => (
                       <span

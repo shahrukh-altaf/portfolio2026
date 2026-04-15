@@ -16,6 +16,7 @@ import Image from "next/image";
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState("all");
+  const [expandedProjects, setExpandedProjects] = useState({});
 
   const filters = [
     { key: "all", label: "All Projects", icon: FaCode },
@@ -96,7 +97,24 @@ export default function Projects() {
                   {project.title}
                 </h3>
                 <p className="text-gray-600 mb-4 leading-relaxed">
-                  {project.description}
+                  {expandedProjects[project.id]
+                    ? project.description
+                    : project.description.length > 150
+                    ? project.description.substring(0, 150) + "..."
+                    : project.description}
+                  {project.description.length > 150 && (
+                    <button
+                      onClick={() =>
+                        setExpandedProjects((prev) => ({
+                          ...prev,
+                          [project.id]: !prev[project.id],
+                        }))
+                      }
+                      className="text-blue-600 hover:text-blue-800 ml-2 font-medium"
+                    >
+                      {expandedProjects[project.id] ? "See less" : "See more"}
+                    </button>
+                  )}
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-6">

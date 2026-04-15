@@ -63,13 +63,13 @@ export default function Contact() {
     {
       icon: FaPhone,
       title: "Phone",
-      value: "+92 (333) 571-2658",
-      link: "tel:+923335712658",
+      value: "+974 30197084",
+      link: "tel:+97430197084",
     },
     {
       icon: FaMapMarkerAlt,
       title: "Location",
-      value: "Islamabad, Pakistan",
+      value: "Doha, Qatar",
       link: "#",
     },
   ];

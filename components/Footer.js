@@ -4,13 +4,12 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: FaGithub, href: "https://github.com/Tilwa", label: "GitHub" },
+    { icon: FaGithub, href: "https://github.com/shahrukh-altaf", label: "GitHub" },
     {
       icon: FaLinkedin,
       href: "https://www.linkedin.com/in/shahrukh-altaf/",
       label: "LinkedIn",
     },
-    { icon: FaTwitter, href: "https://x.com/ShahrukhAltaf3", label: "Twitter" },
     {
       icon: FaEnvelope,
       href: "mailto:shahrukhaltaf123@gmail.com",
@@ -28,8 +27,7 @@ export default function Footer() {
               Shahrukh Altaf
             </h3>
             <p className="text-gray-400 mb-4">
-              Passionate web developer creating amazing digital experiences with
-              modern technologies.
+              Full-Stack Software Engineer building scalable web and mobile applications with modern technologies. Passionate about clean code and innovative solutions.
             </p>
           </div>
 
