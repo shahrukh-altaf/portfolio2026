@@ -17,25 +17,25 @@ export default function About() {
   const [expandedProjects, setExpandedProjects] = useState({});
 
   const skills = [
-    { name: "React.js", level: 90, icon: FaRocket },
-    { name: "Next.js", level: 85, icon: FaRocket },
-    { name: "TypeScript", level: 65, icon: FaCode },
-    { name: "Tailwind CSS", level: 85, icon: FaPalette },
-    { name: "Node.js", level: 80, icon: FaDatabase },
-    { name: "Express.js", level: 75, icon: FaDatabase },
+    { name: "React.js", level: 92, icon: FaRocket },
+    { name: "Next.js", level: 90, icon: FaRocket },
+    { name: "TypeScript", level: 75, icon: FaCode },
+    { name: "Tailwind CSS", level: 88, icon: FaPalette },
+    { name: "Node.js", level: 85, icon: FaDatabase },
+    { name: "Express.js", level: 80, icon: FaDatabase },
     { name: "REST APIs", level: 90, icon: FaTools },
-    { name: "PostgreSQL", level: 80, icon: FaDatabase },
-    { name: "React Query", level: 85, icon: FaTools },
-    { name: "Redux Toolkit", level: 80, icon: FaTools },
-    { name: "Prisma ORM", level: 80, icon: FaDatabase },
-    { name: "React Native", level: 55, icon: FaMobile },
-    { name: "Java (Android)", level: 50, icon: FaMobile },
+    { name: "PostgreSQL", level: 82, icon: FaDatabase },
+    { name: "React Query", level: 88, icon: FaTools },
+    { name: "Redux Toolkit", level: 82, icon: FaTools },
+    { name: "Prisma ORM", level: 84, icon: FaDatabase },
+    { name: "React Native", level: 70, icon: FaMobile },
+    { name: "Java (Android)", level: 60, icon: FaMobile },
   ];
 
   const experiences = [
     {
       title: "Full-Stack Software Engineer",
-      company: "Timeslink | Dubai, UAE",
+      company: "Timeslink • Dubai, UAE",
       period: "07/2025 - 01/2026",
       description:
         "Led end-to-end development of a production-grade web application, from Figma-based design to deployment",
@@ -44,15 +44,15 @@ export default function About() {
         "Developed REST APIs with Prisma ORM and PostgreSQL for efficient data handling",
         "Implemented secure authentication with Google Auth and role-based access",
         "Designed real-time dashboard using React Query for optimized data flow",
-        "Deployed and maintained application on VPS, handling server configuration and production setup",
-        "Delivered multi-language support (English, Russian) for international users",
+        "Deployed and maintained the application on VPS with server configuration and production setup",
+        "Delivered multi-language support for international users",
       ],
       link: "https://timeslinklogistics.com",
     },
 
     {
       title: "Frontend Developer",
-      company: "Hans Logistics FZE | Dubai, UAE",
+      company: "Hans Logistics FZE • Dubai, UAE",
       period: "03/2022 - 04/2024",
       description:
         "Developed and maintained multi-vendor web applications within a collaborative development team",
@@ -61,21 +61,21 @@ export default function About() {
         "Converted Figma designs into responsive UI using Flexbox and Grid layouts",
         "Implemented complete storefront features including product listings and dashboards",
         "Collaborated with backend teams for API integration and data consistency",
-        "Contributed to backend development using Node.js and Express.js in later phase",
+        "Contributed to backend development using Node.js and Express.js in the later phase",
       ],
       link: "https://fasbazar.com/",
     },
     {
-      title: "Junior Java Developer",
-      company: "Pearlcom Softwarehouse | Rawalpindi, Pakistan",
+      title: "Internship Student",
+      company: "Pearlcom Softwarehouse • Rawalpindi, Pakistan",
       period: "09/2018 - 08/2019",
       description:
-        "Developed Android applications using Java with focus on UI/UX design",
+        "Developed Android applications using Java with a strong focus on UI/UX design",
       achievements: [
-        "Designed mobile interfaces using Adobe Illustrator based on client requirements",
+        "Designed mobile interfaces using Adobe Illustrator based on project requirements",
         "Implemented interactive UI components and screen animations",
-        "Built educational mobile application integrated with Firebase backend",
-        "Collaborated within cross-functional team to deliver client projects",
+        "Built an educational mobile application integrated with Firebase backend",
+        "Worked closely with the team to deliver client-focused solutions",
       ],
       link: null,
     },
@@ -108,7 +108,7 @@ export default function About() {
       title: "QuickMart — Instant Order Store",
       link: "https://quick-mart.codesbyshahrukh.online/",
       description:
-        "Built a frictionless e-commerce platform allowing users to place orders without account registration. Built using Next.js and React Query, optimizing server-state management and performance. Designed and implemented admin dashboard with Google Authentication, enabling secure product and order management. Created advanced product management system, supporting variations (size, color, attributes) and bulk operations. Focused on user-centric design, simplifying the ordering process for faster customer conversion.",
+        "Built a frictionless e-commerce platform allowing users to place orders without account registration. Built using Next.js and React Query, optimizing server-state management and performance. Designed and implemented an admin dashboard with Google Authentication, enabling secure product and order management. Created an advanced product management system supporting variations and bulk operations. Focused on user-centric design, simplifying the ordering process for faster customer conversion.",
     },
   ];
 
@@ -120,7 +120,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Full-Stack Software Engineer passionate about building scalable web and mobile applications. Specialized in Next.js, React.js, React Native, Node.js, and PostgreSQL with expertise in developing high-performance user interfaces and RESTful APIs. Dedicated to delivering end-to-end solutions with clean code, innovative architecture, and exceptional user experience.
+            Full-Stack Software Engineer with 3 years of experience building scalable web and mobile applications across software house and product-based environments. Specialized in Next.js, React.js, React Native, Node.js, and PostgreSQL, with strong expertise in high-performance user interfaces and RESTful APIs. Proven ability to deliver end-to-end solutions from UI/UX design to backend development and VPS deployment.
           </p>
         </div>
 
@@ -132,12 +132,11 @@ export default function About() {
                 Who I Am
               </h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Full-Stack Software Engineer with 3+ years of experience building scalable web and mobile applications across software
+                Full-Stack Software Engineer with 3 years of experience building scalable web and mobile applications across software
                 house and product-based environments. Specialized in Next.js, React.js, React Native, Node.js, and PostgreSQL, with strong
                 expertise in developing high-performance user interfaces and RESTful APIs. Proven ability to deliver end-to-end solutions,
                 from UI/UX design to backend development and production deployment on VPS environments. Experienced with modern
-                tools including React Query, Prisma ORM, and Tailwind CSS for building efficient and maintainable systems. Based in Doha
-                with transferable visa and immediate availability.
+                tools including React Query, Prisma ORM, and Tailwind CSS for building efficient and maintainable systems.
               </p>
               <div className="grid grid-cols-2 gap-1 sm:gap-2 md:gap-4">
                 <div className="text-center p-1 sm:p-2 md:p-4 bg-white rounded-lg">

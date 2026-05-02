@@ -27,7 +27,7 @@ export default function Footer() {
               Shahrukh Altaf
             </h3>
             <p className="text-gray-400 mb-4">
-              Full-Stack Software Engineer building scalable web and mobile applications with modern technologies. Passionate about clean code and innovative solutions.
+              Full-Stack Software Engineer based in Islamabad, Pakistan, building scalable web and mobile applications with modern technologies. Passionate about clean code and innovative solutions.
             </p>
           </div>
 

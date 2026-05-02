@@ -16,9 +16,9 @@ export default function Hero() {
   const texts = [
     "Full-Stack Software Engineer",
     "React.js & Next.js Professional",
-    "Node.js & REST APIs Developer",
-    "Prisma + PostgreSQL Specialist",
-    "Web & Mobile Developer",
+    "Node.js & PostgreSQL Developer",
+    "Prisma ORM Specialist",
+    "React Native Mobile Apps",
   ];
 
   useEffect(() => {
@@ -74,7 +74,7 @@ export default function Hero() {
             </div>
 
             <p className="text-lg opacity-90 mb-8 leading-relaxed">
-              Full-Stack Software Engineer specializing in web and mobile development. I build scalable applications using React.js, Next.js, Node.js, React Native with Prisma ORM and PostgreSQL. Creating fast, modern solutions with clean code and robust architecture.
+              Full-Stack Software Engineer with 3 years of experience building scalable web and mobile applications across software house and product-based environments. Specialized in Next.js, React.js, React Native, Node.js, and PostgreSQL. I deliver high-performance user interfaces, RESTful APIs, and production deployments on VPS infrastructure.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -85,7 +85,7 @@ export default function Hero() {
                 Get In Touch
               </button>
               <a
-                href="https://drive.google.com/file/d/1sxeNHW6EDWwHY1SP5NFHd9c5EIYgGJrN/view?usp=sharing"
+                href="https://drive.google.com/file/d/1XQk2L9zMsGkPDa0IhBEPoR6RUJi2Edng/view?usp=sharing"
                 target="_blank"
                 download
                 className="btn-secondary text-lg px-8 py-4 hover-lift"
