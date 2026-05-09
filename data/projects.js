@@ -2,6 +2,8 @@ import vocabup from "../public/images/projectsImages/vocabup.png";
 import timeslink from "../public/images/projectsImages/timeslink.png";
 import crud from "../public/images/projectsImages/crud.png";
 import quickmart from "../public/images/projectsImages/quick-mart.png";
+import timesheet from "../public/images/projectsImages/timesheet.png";
+
 
 export const projects = [
   {
@@ -49,7 +51,7 @@ export const projects = [
   },
 
   {
-    id: 100,
+    id: 4,
     title: "CRUD Next.js Application",
     description:
       "CRUD app using Nextjs, Prisma & Postgres. Features secure data management with create, read, update, & delete operations in a clean responsive interface.",
@@ -60,4 +62,16 @@ export const projects = [
     featured: true,
     image: crud,
   },
-];
+  {
+  id: 5,
+  title: "Timesheet Management Application",
+  description:
+    "Timesheet management app built with Next.js App Router, TypeScript, Prisma, PostgreSQL, and NextAuth credentials login. Features secure data management with create, read, update, & delete operations in a clean responsive interface.",
+  technologies: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "NextAuth", "Vitest"],
+  category: "nextjs",
+  github: "https://github.com/shahrukh-altaf/timesheet",
+  live: "https://timesheet.codesbyshahrukh.online/",
+  featured: true,
+  image: timesheet,
+  }
+] ;
